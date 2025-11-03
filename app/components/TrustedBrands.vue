@@ -1,23 +1,23 @@
 <template>
-  <section class="bg-white py-12 overflow-hidden">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-2xl font-semibold text-center mb-8">
+  <section class="bg-white text-primary py-12 overflow-hidden">
+    <div class="px-6 max-w-6xl mx-auto">
+      <h1 class="text-2xl font-semibold text-center mb-8">
         Trusted by various engineering teams
-      </h2>
-
+      </h1>
       <Swiper
         :modules="[Autoplay]"
         :slides-per-view="5"
         :space-between="30"
         :loop="true"
-        :free-mode="true"
+        :free-mode="{ enabled: true, momentum: false }"
         :autoplay="{
           delay: 0,
           disableOnInteraction: false,
           pauseOnMouseEnter: false,
         }"
-        speed="6000"
+        :speed="5000"
         class="cursor-grab"
+        grab-cursor
       >
         <!-- Duplicate slides for seamless loop -->
         <SwiperSlide

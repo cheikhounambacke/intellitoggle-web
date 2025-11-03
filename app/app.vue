@@ -2,4 +2,6 @@
   <Navbar />
   <Hero />
   <TrustedBrands />
+  <ProductOverview />
+  <OpenFeatureOverview />
 </template>
