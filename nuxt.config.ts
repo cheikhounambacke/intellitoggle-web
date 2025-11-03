@@ -24,4 +24,8 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
   },
+  app: {
+    baseURL: "/intellitoggle-web/", // your GitHub repo name
+    buildAssetsDir: "assets",
+  },
 });
