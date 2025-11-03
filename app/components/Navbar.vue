@@ -1,27 +1,35 @@
 <template>
-  <header class="bg-primary text-white fixed top-0 left-0 right-0 z-50">
+  <header
+    :class="[
+      'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+      isScrolled ? 'bg-white text-primary shadow-md' : 'bg-primary text-white',
+    ]"
+  >
     <nav
       class="max-w-6xl mx-auto flex items-center justify-between px-6 md:px-8 py-4"
     >
-      <!-- Left: Logo (SVG Inline) -->
+      <!-- Left: Logo -->
       <NuxtLink class="flex items-center" to="/">
-        <img src="/logo-white.png" class="h-8 w-auto" />
+        <img
+          :src="isScrolled ? '/logo-dark.png' : '/logo-white.png'"
+          class="h-8 w-auto"
+        />
       </NuxtLink>
 
       <!-- Middle: Nav Links (Desktop) -->
       <ul class="hidden md:flex space-x-8 font-medium">
         <li>
-          <NuxtLink to="/" class="hover:text-white/80 transition-colors"
+          <NuxtLink to="/" class="hover:opacity-80 transition-colors"
             >Home</NuxtLink
           >
         </li>
         <li>
-          <NuxtLink to="/about" class="hover:text-white/80 transition-colors"
+          <NuxtLink to="/about" class="hover:opacity-80 transition-colors"
             >About</NuxtLink
           >
         </li>
         <li>
-          <NuxtLink to="/pricing" class="hover:text-white/80 transition-colors"
+          <NuxtLink to="/pricing" class="hover:opacity-80 transition-colors"
             >Pricing</NuxtLink
           >
         </li>
@@ -39,7 +47,8 @@
           <svg
             v-if="!isOpen"
             xmlns="http://www.w3.org/2000/svg"
-            class="h-8 w-8 text-accent"
+            class="h-8 w-8"
+            :class="isScrolled ? 'text-primary' : 'text-white'"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -55,7 +64,8 @@
           <svg
             v-else
             xmlns="http://www.w3.org/2000/svg"
-            class="h-8 w-8 text-accent"
+            class="h-8 w-8"
+            :class="isScrolled ? 'text-black' : 'text-accent'"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -71,30 +81,30 @@
       </div>
     </nav>
 
-    <!-- Mobile Menu with Fade + Slide -->
+    <!-- Mobile Menu -->
     <transition name="fade">
-      <div v-if="isOpen" class="md:hidden bg-primary text-white w-full">
+      <div
+        v-if="isOpen"
+        class="md:hidden w-full transition-colors"
+        :class="isScrolled ? 'bg-white text-black' : 'bg-primary text-white'"
+      >
         <ul class="flex flex-col space-y-4 p-6">
-          <li class="opacity-0 animate-fade-in delay-75">
-            <NuxtLink to="/" class="hover:text-white/80 transition-opacity"
+          <li>
+            <NuxtLink to="/" class="hover:opacity-80 transition-opacity"
               >Home</NuxtLink
             >
           </li>
-          <li class="opacity-0 animate-fade-in delay-150">
-            <NuxtLink to="/about" class="hover:text-white/80 transition-opacity"
+          <li>
+            <NuxtLink to="/about" class="hover:opacity-80 transition-opacity"
               >About</NuxtLink
             >
           </li>
-          <li class="opacity-0 animate-fade-in delay-225">
-            <NuxtLink
-              to="/pricing"
-              class="hover:text-white/80 transition-opacity"
+          <li>
+            <NuxtLink to="/pricing" class="hover:opacity-80 transition-opacity"
               >Pricing</NuxtLink
             >
           </li>
-          <li class="opacity-0 animate-fade-in delay-300">
-            <BaseButton>Start Sandbox</BaseButton>
-          </li>
+          <li><BaseButton>Start Sandbox</BaseButton></li>
         </ul>
       </div>
     </transition>
@@ -103,9 +113,8 @@
 
 <script setup>
 import { ref } from "vue";
-const isOpen = ref(false);
-</script>
+import { useScrollHeader } from "~/composables/useScrollHeader";
 
-<style>
-/* Tailwind fade-in animation */
-</style>
+const isOpen = ref(false);
+const { isScrolled } = useScrollHeader(64);
+</script>
