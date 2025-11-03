@@ -6,7 +6,7 @@
     ]"
   >
     <nav
-      class="max-w-6xl mx-auto flex items-center justify-between px-6 md:px-8 py-4"
+      class="max-w-6xl mx-auto flex items-center justify-between px-6 md:px-8 py-4 text-xs"
     >
       <!-- Left: Logo -->
       <NuxtLink class="flex items-center" to="/">

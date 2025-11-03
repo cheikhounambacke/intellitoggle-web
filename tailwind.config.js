@@ -17,7 +17,7 @@ export default {
       },
       colors: {
         primary: "#2E2A8A", // Button / Navbar background
-        accent: "#D48C0C", // Highlight / CTA
+        accent: "#F9A71E", // Highlight / CTA
         text: "#FFFFFF", // Text color
         footer: "#1E1B3A", // Footer background
       },
