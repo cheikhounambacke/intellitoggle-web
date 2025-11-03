@@ -12,7 +12,7 @@
     <div
       class="relative z-10 flex flex-col flex-1 gap-12 pt-12 px-6 text-center"
     >
-      <div class="max-w-2xl mx-auto flex flex-col items-center gap-4">
+      <div class="max-w-3xl mx-auto flex flex-col items-center gap-4">
         <h1
           class="leading-normal tracking-widest text-2xl md:text-3xl font-bold"
         >
@@ -28,19 +28,17 @@
         >
           Feature flags built for Dart, ship faster, roll back safely, and scale
           with Ai-powered delivery
-          <span class="text-accent">starting at just $1/month</span>
+          <span class="w-full text-accent">starting at just $1/month</span>
         </p>
 
         <!-- Buttons -->
-        <div class="mt-4 flex flex-col sm:flex-row justify-center gap-4">
-          <div
-            class="text-left flex flex-col gap-2 items-center sm:items-start"
-          >
+        <div class="mt-4 flex flex-col sm:flex-col gap-4">
+          <div class="text-left flex flex-col gap-2">
             <p class="text-xs text-white/80">Valid until September, 2025</p>
-            <BaseButton>Get Access</BaseButton>
+            <BaseButton class="sm:w-full">Get Access</BaseButton>
           </div>
           <SecondaryButton
-            customClass="bg-transparent border-accent border self-end"
+            customClass=" bg-transparent border-accent border self-end "
           >
             Join Ai Early Access
           </SecondaryButton>
