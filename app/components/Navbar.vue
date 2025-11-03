@@ -1,7 +1,7 @@
 <template>
   <header class="bg-primary text-white fixed top-0 left-0 right-0 z-50">
     <nav
-      class="max-w-8xl mx-auto flex items-center justify-between px-6 md:px-8 py-4"
+      class="max-w-6xl mx-auto flex items-center justify-between px-6 md:px-8 py-4"
     >
       <!-- Left: Logo (SVG Inline) -->
       <NuxtLink class="flex items-center" to="/">
