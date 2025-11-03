@@ -54,25 +54,5 @@
         />
       </div>
     </div>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi vel
-      nostrum, vero dolorem tempore magni placeat qui molestias. Mollitia
-      repellat at commodi eius porro quo sint esse dolores eum veritatis?
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi vel
-      nostrum, vero dolorem tempore magni placeat qui molestias. Mollitia
-      repellat at commodi eius porro quo sint esse dolores eum veritatis?
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi vel
-      nostrum, vero dolorem tempore magni placeat qui molestias. Mollitia
-      repellat at commodi eius porro quo sint esse dolores eum veritatis?
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi vel
-      nostrum, vero dolorem tempore magni placeat qui molestias. Mollitia
-      repellat at commodi eius porro quo sint esse dolores eum veritatis?
-    </p>
   </section>
 </template>
