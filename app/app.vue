@@ -4,4 +4,6 @@
   <TrustedBrands />
   <ProductOverview />
   <OpenFeatureOverview />
+  <HowItWorks />
+  <Footer />
 </template>

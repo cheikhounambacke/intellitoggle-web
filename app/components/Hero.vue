@@ -10,7 +10,7 @@
 
     <!-- Hero -->
     <div
-      class="relative z-10 flex flex-col flex-1 gap-12 pt-12 px-6 text-center"
+      class="leading-relaxed relative z-10 flex flex-col flex-1 gap-12 pt-12 px-6 text-center"
     >
       <div class="max-w-3xl mx-auto flex flex-col items-center gap-4">
         <h1
@@ -32,7 +32,7 @@
         </p>
 
         <!-- Buttons -->
-        <div class="mt-4 flex flex-col sm:flex-col gap-4">
+        <div class="mt-4 flex flex-col sm:flex-row gap-4">
           <div class="text-left flex flex-col gap-2">
             <p class="text-xs text-white/80">Valid until September, 2025</p>
             <BaseButton class="sm:w-full">Get Access</BaseButton>
@@ -46,7 +46,7 @@
       </div>
 
       <!-- GIF -->
-      <div class="max-w-4xl mx-auto flex justify-center flex-1">
+      <div class="max-w-4xl mx-auto flex justify-center flex-1 shrink">
         <img
           class="h-full w-full object-contain"
           src="/dashboard.gif"
