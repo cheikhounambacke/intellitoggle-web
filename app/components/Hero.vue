@@ -12,12 +12,10 @@
     <div
       class="leading-relaxed relative z-10 flex flex-col flex-1 gap-12 pt-12 px-6 text-center"
     >
-      <div class="max-w-3xl mx-auto flex flex-col items-center gap-4">
-        <h1
-          class="leading-normal tracking-widest text-2xl md:text-3xl font-bold"
-        >
+      <div class="max-w-3xl mx-auto flex flex-col items-center gap-4 leading-6">
+        <h1 class="tracking-widest text-2xl md:text-3xl font-bold">
           The First
-          <span class="rounded-lg text-primary bg-accent px-4 py-2">
+          <span class="rounded-lg text-primary bg-accent mx-2 px-3 py-1.5">
             Dart-Native
           </span>
           Feature Flag With DartCode Ai

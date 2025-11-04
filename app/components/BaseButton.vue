@@ -1,7 +1,7 @@
 <template>
   <button
     :class="[
-      'bg-accent text-primary font-semibold px-6 py-3 rounded-lg hover:bg-accent/80 transition-colors text-sm ',
+      'bg-accent text-primary font-semibold px-3 py-1.5 rounded-md hover:bg-accent/90 transition-all text-xs sm:text-sm shadow-sm',
       customClass,
     ]"
   >

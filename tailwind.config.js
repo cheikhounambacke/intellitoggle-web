@@ -16,7 +16,7 @@ export default {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primary: "#2E2A8A", // Button / Navbar background
+        primary: "#42389E", // Button / Navbar background
         accent: "#F9A71E", // Highlight / CTA
         text: "#FFFFFF", // Text color
         footer: "#1E1B3A", // Footer background

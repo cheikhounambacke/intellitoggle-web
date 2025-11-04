@@ -27,5 +27,34 @@ export default defineNuxtConfig({
   app: {
     baseURL: "/intellitoggle-web/", // your GitHub repo name
     buildAssetsDir: "assets",
+    head: {
+      title: "Welcome To Intellitoglle ",
+      link: [
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "16x16",
+          href: "/favicon-16x16.png",
+        },
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "24x24",
+          href: "/favicon-24x24.png",
+        },
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "48x48",
+          href: "/favicon-48x48.png",
+        },
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "96x96",
+          href: "/favicon-96x96.png",
+        },
+      ],
+    },
   },
 });
