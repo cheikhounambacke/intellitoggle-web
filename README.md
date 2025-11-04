@@ -1,4 +1,4 @@
-# 🌐 Nuxt 3 Website
+# 🌐 Nuxt 3 Inteelitoggle Home page
 
 This project is built using **Nuxt 3**, **Vue 3**, and **Tailwind CSS**, showcasing a responsive and interactive front-end experience with dynamic UI effects and animations.
 
